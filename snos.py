@@ -229,7 +229,7 @@ def handle_complaint(senders, receivers):
                 print(decode(b"\xd0\x9e\xd1\x82\xd0\xbf\xd1\x80\xd0\xb0\xd0\xb2\xd0\xbb\xd0\xb5\xd0\xbd\xd0\xbe \xd0\xbd\xd0\xb0 ") + receiver_email)
                 sent_emails += 1
                 
-    if select == "5":
+    if "select" == "5":
         url = pystyle.Write.Input("[?] URL: ", pystyle.Colors.green, interval=0.005)
         num_requests = int(
             pystyle.Write.Input(
@@ -260,4 +260,4 @@ def handle_complaint(senders, receivers):
             t.join()         
 
 if __name__ == "__main__":
-    handle_complaint(senders, receivers)
+    
